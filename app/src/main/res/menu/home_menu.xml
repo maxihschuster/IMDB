@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+        android:id="@+id/action_sort_by"
+        android:icon="@drawable/ic_baseline_sort_24"
+        android:title="Sort by"
+        app:showAsAction="ifRoom"
+
+        >
+
+
+
+
+        <menu>
+            <group
+                android:id="@+id/menu_sort_group"
+                android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/menu_action_popular_movies"
+                    android:checked="false"
+
+
+                    android:icon="@drawable/ic_baseline_trending_up_24"
+                    android:title="Populares" />
+
+                <item
+                    android:id="@+id/menu_action_top_rated"
+                    android:icon="@drawable/ic_baseline_star_24"
+
+                    android:title="Mejor valoración" />
+
+                <item
+                    android:id="@+id/menu_action_now_playing"
+                    android:icon="@drawable/ic_baseline_fiber_new_24"
+
+                    android:title="Recientes" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
